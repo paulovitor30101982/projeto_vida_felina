@@ -1,0 +1,9 @@
+body{
+    text-align: center;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgb(178, 180, 218) url(img/Frente.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
