@@ -1,9 +1,355 @@
-body{
-    text-align: center;
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background: rgb(178, 180, 218) url(img/Frente.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+body {  
+    text-align: center; /* Centraliza o conteúdo do corpo da página */
+    color: #3498db; /* Define a cor do texto */
+    border-radius: 15px; /* Arredonda os cantos */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte do texto */
+    background: rgb(178, 180, 218) url(img/Frente.jpg) no-repeat center center; /* Define um fundo com cor e imagem centralizada */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+
 }
 
+/* Estilização da barra de navegação */
+.navbar {  
+    padding: 0 40px; /* Define o espaçamento interno horizontal */
+    background-color: #efb5ae; /* Define a cor de fundo */
+}
+
+/* Alinhamento do logotipo e texto */
+.navbar-brand {  
+    display: flex; /* Organiza elementos em linha */
+    align-items: center; /* Alinha elementos verticalmente */
+    color: #5f8fb6; /* Define a cor do texto */
+}
+
+/* Configuração da imagem do logotipo */
+.navbar-brand img {  
+    width: 100px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilização do texto do logotipo */
+.navbar-brand span {  
+    font-size: 20px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Torna o texto em negrito */
+    margin-left: 20px; /* Define o espaço entre a imagem e o texto */
+}
+
+/* Classe personalizada para os botões */
+.btn-custom {
+    font-size: 16px; /* Tamanho do texto */
+    font-family: 'Arial', sans-serif; /* Fonte personalizada */
+    color: #ffffff; /* Cor do texto */
+    background-color: #5f8fb6; /* Cor de fundo */
+    padding: 10px 15px; /* Espaçamento interno */
+    width: 100px; /* Largura fixa reduzida para os botões */
+    border: none;    
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 1em 5px; /* Espaçamento vertical de um parágrafo (1em) e horizontal de 5px */
+    text-decoration: none; /* Remover sublinhado */
+    transition: 0.3s ease; /* Suavizar efeitos */
+    margin: 10px 5px; /* Adiciona espaço ao redor dos botões */   
+    min-width: auto;/*Falicita a responsividade no tamanho dos botôes em telas menores*/
+    text-align: center;
+    cursor: pointer;
+    display: inline-block; /* Comportamento similar a links da navbar */
+}
+
+/* Efeito ao passar o mouse */
+.btn-custom:hover {
+    background-color: #4a7391;
+    color: #fff;
+}
+
+/* Garante que o menu se alinhe à esquerda quando expandido */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: right;
+    }
+
+    .navbar-nav {
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .contato {
+        max-width: 90%;
+        padding: 15px;
+    }
+    .cx_txt, .grupo_maior {
+        max-width: 100%;
+        font-size: 14px;
+    }
+    .btn-custom {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin: 1em 5px; /* Mantém o espaçamento vertical em telas menores */
+    }
+    .servicos {
+        display: inline-block; /* Mantém lado a lado, mas permite ajuste */
+        margin: 20px; /* Espaçamento menor em telas pequenas */
+    }
+    .tm-img {
+        max-width: 120px; /* Menor em telas pequenas */
+        border: 3px solid #5f8fb6; /* Mantém a moldura em telas menores */
+    }
+    figcaption {
+        font-size: 16px; /* Fonte um pouco menor em telas pequenas */
+        margin-top: 15px; /* Afastamento ajustado para telas menores */
+        background: #5f8fb6; /* Mantém o fundo em telas menores */
+        border-radius: 10px; /* Mantém os cantos arredondados */
+    }
+    .content h2 {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte em telas menores */
+        padding: 8px 15px; /* Ajusta o espaçamento interno em telas menores */
+        background: #efb5ae; /* Mantém o fundo em telas menores */
+        border-radius: 10px; /* Mantém as bordas arredondadas */
+    }
+}
+
+.carousel-container {
+    width: 80%; /* Define uma largura personalizada */
+    max-width: 600px; /* Impede que o carousel fique muito grande */
+    height: 550px; /* Define a altura */
+    margin: 20px auto; /* Adiciona margem superior para elevar o carousel */
+    position: relative; /* Mantém controle sobre sua posição */
+    top: 0%; /* Move o carousel para cima */
+    border: 07px solid #5f8fb6; /* Define uma borda azul de 5px */
+    border-radius: 15px; /* Adiciona cantos arredondados */
+    overflow: hidden; /* Evita que imagens ultrapassem a borda */
+}
+
+.mapa-container {
+    width: 80%; /* Define uma largura personalizada */
+    max-width: 600px; /* Impede que o carousel fique muito grande */
+    height: 450px; /* Define a altura */
+    margin: 20px auto; /* Adiciona margem superior para elevar o carousel */
+    position: relative; /* Mantém controle sobre sua posição */
+    top: 0%; /* Move o carousel para cima */
+    border: 07px solid #5f8fb6; /* Define uma borda azul de 5px */
+    border-radius: 15px; /* Adiciona cantos arredondados */
+    overflow: hidden; /* Evita que imagens ultrapassem a borda */
+}
+
+/* Ajusta as imagens dentro do carousel */
+.carousel-inner img {
+    width: auto;
+    height: auto;
+    object-fit: contain;text-align: cen
+}
+
+.endereco{
+    text-align: center; /* Centraliza o conteúdo do corpo da página */
+    color: #5f8fb6; /* Define a cor do texto */
+    font-size: 20px; /* Define o tamanho da fonte como 24 pixels */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte do texto */
+    background: #eda9a1; /* Define um fundo com cor*/    
+    width: 600px; /* Define a largura da div */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    font-weight: bold; /* Deixa o texto em negrito */
+    border-radius: 15px; /* Arredonda os cantos */
+}
+
+.contato {
+    text-align: center; /* Centraliza o conteúdo */
+    color: #5f8fb6; /* Cor do texto */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fonte elegante */
+    background: #efb5ae; /* Fundo coral */
+    max-width: 800px; /* Largura máxima, em vez de fixa */
+    min-height: 500px; /* Altura mínima, ajustável */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    font-weight: bold; /* Texto em negrito */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px; /* Espaço interno para melhor layout */
+}
+
+.contato h2 {
+    font-size: 24px; /* Tamanho específico para o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.grupo {
+    color: #5f8fb6;
+    padding: 5%;
+    border: 1px solid #5f8fb6; /* Borda sutil para o fieldset */
+    border-radius: 10px; /* Arredonda os cantos do fieldset */
+    margin: 0 auto; /* Centraliza o fieldset */
+    max-width: 90%; /* Limita a largura para responsividade */
+    height: 520px; /* Altura fixa de 500 pixels */
+}
+
+.cx_txt {
+    resize: none; /* Impede redimensionamento */
+    width: 100%; /* Largura total */
+    max-width: 600px; /* Limite máximo */
+    height: 150px; /* Altura fixa */
+    display: block;
+    margin: 0 auto;
+    padding: 10px; /* Espaço interno */
+    border: 1px solid #5f8fb6; /* Borda consistente */
+    border-radius: 5px; /* Arredonda os cantos */
+    background: #fff; /* Fundo branco para destaque */
+}
+
+.grupo_maior {
+    font-size: 16px;
+    width: 100%; /* Largura total */
+    max-width: 600px; /* Limite máximo */
+    padding: 6px; /* Espaço interno */
+    border: 1px solid #5f8fb6; /* Borda consistente */
+    border-radius: 5px; /* Arredonda os cantos */
+    display: block;
+    margin: 0 auto; /* Centraliza os campos */
+}
+
+.footer {
+    font-weight: bold;
+    text-align: center;
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: transparent; /* Define uma cor de fundo */
+    color: #ffffff; /* Muda a cor do texto */
+    border-top: 00px solid #3498db; /* Adiciona uma borda superior */
+}
+.rounded-social-buttons {
+    text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 0.125rem solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fefefe;
+    font-size: 1.5625rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s ease;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+  
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+  
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-tiktok, .fa-youtube, .fa-instagram {
+    font-size: 25px;
+}
+  
+.rounded-social-buttons .social-button.facebook {
+    background: #3b5998;
+}
+  
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+    color: #3b5998;
+    background: #fefefe;
+    border-color: #3b5998;
+}
+  
+.rounded-social-buttons .social-button.twitter {
+    background: #55acee;
+}
+  
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+    color: #55acee;
+    background: #fefefe;
+    border-color: #55acee;
+}
+  
+.rounded-social-buttons .social-button.linkedin {
+    background: #007bb5;
+}
+  
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+    color: #007bb5;
+    background: #fefefe;
+    border-color: #007bb5;
+}
+  
+.rounded-social-buttons .social-button.tiktok {
+    background: #000000;
+}
+  
+.rounded-social-buttons .social-button.tiktok:hover, .rounded-social-buttons .social-button.tiktok:focus {
+    color: #000000;
+    background: #fefefe;
+    border-color: #000000;
+}
+  
+.rounded-social-buttons .social-button.youtube {
+    background: #bb0000;
+}
+  
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+    color: #bb0000;
+    background: #fefefe;
+    border-color: #bb0000;
+}
+  
+.rounded-social-buttons .social-button.instagram {
+    background: #125688;
+}
+  
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+    color: #125688;
+    background: #fefefe;
+    border-color: #125688;
+}
+.container{
+    width: 70%;
+    margin-left: 15%;
+    background: bisque;
+    border-radius: 15px; /* Ajuste o valor conforme desejar */
+
+}
+
+/* Conteúdo */
+.content {
+    text-align: center;
+    padding: 20px;
+    display: flex; /* Usa flexbox para organizar o conteúdo */
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    justify-content: center; /* Centraliza as figuras horizontalmente */
+}
+.content h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: #5f8fb6;
+    font-weight: bold;
+    margin-bottom: 50px; /* Aumenta o espaçamento abaixo do título */
+    background: #efb5ae; /* Fundo na cor #efb5ae */
+    padding: 10px 20px; /* Espaçamento interno para o fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    display: inline-block; /* Ajusta o fundo ao tamanho do texto */
+    width: 24%; /* Garante que o título ocupe toda a largura */
+    text-align: center; /* Mantém o texto centralizado */
+}
+.servicos{
+    display: inline-block;
+    margin: 50px; /* Aumenta o afastamento entre as figuras */
+}
+/* Conteúdo: Reduzindo as imagens dos serviços */
+.tm-img {
+    max-width: 450px; /* Reduz a largura máxima para 150px */
+    height: auto; /* Mantém a proporção */
+    border-radius: 15px;
+    border: 3px solid #5f8fb6; /* Adiciona moldura na cor #5f8fb6 */
+}
+
+figcaption {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5f8fb6;
+    margin-top: 20px; /* Aumenta o afastamento da imagem */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    background: #5f8fb6; /* Fundo na cor da navbar (assumindo #5f8fb6) */
+    color: #fff; /* Texto branco para contraste com o fundo */
+    padding: 5px 10px; /* Espaçamento interno para o fundo */
+    border-radius: 10px; /* Cantos arredondados para o fundo */
+}
