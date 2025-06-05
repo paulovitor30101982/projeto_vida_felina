@@ -3,9 +3,10 @@ body {
     color: #3498db; /* Define a cor do texto */
     border-radius: 15px; /* Arredonda os cantos */
     font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte do texto */
-    background: rgb(178, 180, 218) url(img/Frente.jpg) no-repeat center center; /* Define um fundo com cor e imagem centralizada */
+    background: rgb(178, 180, 218) url('img/Frente.jpg') no-repeat center center; /* Define um fundo com cor e imagem centralizada */
     background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
     background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    opacity: 5; 
 
 }
 
@@ -20,6 +21,8 @@ body {
     display: flex; /* Organiza elementos em linha */
     align-items: center; /* Alinha elementos verticalmente */
     color: #5f8fb6; /* Define a cor do texto */
+    color: inherit !important; /* Mantém a cor original do texto da logo ao passar o mouse */
+    #aumentar a letra do texto ao passar o mouse */
 }
 
 /* Configuração da imagem do logotipo */
@@ -34,7 +37,6 @@ body {
     font-weight: bold; /* Torna o texto em negrito */
     margin-left: 20px; /* Define o espaço entre a imagem e o texto */
 }
-
 /* Classe personalizada para os botões */
 .btn-custom {
     font-size: 16px; /* Tamanho do texto */
@@ -61,6 +63,32 @@ body {
     color: #fff;
 }
 
+/* Classe personalizada para os botões */
+.btn-custom-sr {
+    font-size: 16px; /* Tamanho do texto */
+    font-family: 'Arial', sans-serif; /* Fonte personalizada */
+    color: #ffffff; /* Cor do texto */
+    background-color: #5f8fb6; /* Cor de fundo */
+    padding: 10px 15px; /* Espaçamento interno */
+    width: 100px; /* Largura fixa reduzida para os botões */
+    border: none;    
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 1em 5px; /* Espaçamento vertical de um parágrafo (1em) e horizontal de 5px */
+    text-decoration: none; /* Remover sublinhado */
+    transition: 0.3s ease; /* Suavizar efeitos */
+    margin: 10px 5px; /* Adiciona espaço ao redor dos botões */   
+    min-width: auto;/*Falicita a responsividade no tamanho dos botôes em telas menores*/
+    text-align: center;
+    cursor: pointer;
+    display: inline-block; /* Comportamento similar a links da navbar */
+}
+
+/* Efeito ao passar o mouse */
+.btn-custom-sr:hover {
+    background-color: #4a7391;
+    color: #fff;
+}
+
 /* Garante que o menu se alinhe à esquerda quando expandido */
 @media (max-width: 768px) {
     .navbar-collapse {
@@ -79,7 +107,9 @@ body {
         max-width: 100%;
         font-size: 14px;
     }
-    .btn-custom {
+    .btn-
+       
+    {
         font-size: 14px;
         padding: 8px 12px;
         margin: 1em 5px; /* Mantém o espaçamento vertical em telas menores */
@@ -352,4 +382,39 @@ figcaption {
     color: #fff; /* Texto branco para contraste com o fundo */
     padding: 5px 10px; /* Espaçamento interno para o fundo */
     border-radius: 10px; /* Cantos arredondados para o fundo */
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap; /* para quebrar em telas menores */
+}
+
+.servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px; /* largura fixa ou baseada na imagem */
+}
+
+.tm-img-sr {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.btn-custom-sr {
+    width: 350px;/* botão maior que a imagem */
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover-sr {
+    background-color: #0056b3;
 }
