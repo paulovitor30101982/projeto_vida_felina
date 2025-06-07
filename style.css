@@ -88,6 +88,13 @@ body {
     background-color: #4a7391;
     color: #fff;
 }
+#nome, #email {
+    width: 400px;
+}
+#telefone {
+    width: 180px;
+    maxlength: 14;
+}
 
 /* Garante que o menu se alinhe à esquerda quando expandido */
 @media (max-width: 768px) {
