@@ -1,18 +1,18 @@
 body {  
     text-align: center; /* Centraliza o conteúdo do corpo da página */
-    color: #3498db; /* Define a cor do texto */
+    color: #5f8fb6; /* Define a cor do texto */
     border-radius: 15px; /* Arredonda os cantos */
     font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte do texto */
     background: rgb(178, 180, 218) url('img/Frente.jpg') no-repeat center center; /* Define um fundo com cor e imagem centralizada */
     background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
     background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
-    opacity: 5; 
+    opacity: 1; 
 
 }
 
 /* Estilização da barra de navegação */
 .navbar {  
-    padding: 0 40px; /* Define o espaçamento interno horizontal */
+    padding: 1rem; /* Define o espaçamento interno horizontal */
     background-color: #efb5ae; /* Define a cor de fundo */
 }
 
@@ -21,8 +21,7 @@ body {
     display: flex; /* Organiza elementos em linha */
     align-items: center; /* Alinha elementos verticalmente */
     color: #5f8fb6; /* Define a cor do texto */
-    color: inherit !important; /* Mantém a cor original do texto da logo ao passar o mouse */
-    #aumentar a letra do texto ao passar o mouse */
+    color: inherit !important; /* Mantém a cor original do texto da logo ao passar o mouse */   
 }
 
 /* Configuração da imagem do logotipo */
@@ -33,10 +32,24 @@ body {
 
 /* Estilização do texto do logotipo */
 .navbar-brand span {  
-    font-size: 20px; /* Define o tamanho da fonte */
+    font-size: 1.5vw; /* Define o tamanho da fonte */
     font-weight: bold; /* Torna o texto em negrito */
     margin-left: 20px; /* Define o espaço entre a imagem e o texto */
+    color: #5f8fb6; /* para texto visível */
+    white-space: normal; /* Permite quebra de linha */
 }
+
+.nav-link {
+    color: white !important; /* garante visibilidade dos links */
+}
+
+.logo-img {
+    max-width: 100%;
+    height: auto;
+    width: clamp(40px, 10vw, 80px); /* Ajusta o tamanho entre 40px e 80px conforme a tela */
+    border-radius: 100%; /* Se quiser deixar a logo arredondada */
+}
+
 /* Classe personalizada para os botões */
 .btn-custom {
     font-size: 16px; /* Tamanho do texto */
@@ -61,6 +74,8 @@ body {
 .btn-custom:hover {
     background-color: #4a7391;
     color: #fff;
+    font-size: 1.2rem; /* Aumenta a letra ao passar o mouse */
+    transition: font-size 0.3s ease; /* Suaviza a transição */
 }
 
 /* Classe personalizada para os botões */
@@ -92,8 +107,7 @@ body {
     width: 400px;
 }
 #telefone {
-    width: 180px;
-    maxlength: 14;
+    width: 180px;    
 }
 
 /* Garante que o menu se alinhe à esquerda quando expandido */
@@ -136,10 +150,17 @@ body {
         border-radius: 10px; /* Mantém os cantos arredondados */
     }
     .content h2 {
-        font-size: 1.5rem; /* Ajusta o tamanho da fonte em telas menores */
+        font-size: 0.5rem; /* Ajusta o tamanho da fonte em telas menores */
         padding: 8px 15px; /* Ajusta o espaçamento interno em telas menores */
         background: #efb5ae; /* Mantém o fundo em telas menores */
         border-radius: 10px; /* Mantém as bordas arredondadas */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .content h2 {
+        font-size: 1.5rem;
     }
 }
 
@@ -354,10 +375,16 @@ body {
     display: flex; /* Usa flexbox para organizar o conteúdo */
     flex-wrap: wrap; /* Permite quebra de linha se necessário */
     justify-content: center; /* Centraliza as figuras horizontalmente */
+    margin: 0 auto;
+    max-width: 90%;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
 }
+
+
 .content h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 24px;
+    font-size: 1.5rem; /* Tamanho padrão */
     color: #5f8fb6;
     font-weight: bold;
     margin-bottom: 50px; /* Aumenta o espaçamento abaixo do título */
@@ -367,6 +394,8 @@ body {
     display: inline-block; /* Ajusta o fundo ao tamanho do texto */
     width: 24%; /* Garante que o título ocupe toda a largura */
     text-align: center; /* Mantém o texto centralizado */
+    word-wrap: break-word; /* Quebra linha se necessário */
+    transition: all 0.3s ease-in-out;
 }
 .servicos{
     display: inline-block;
@@ -422,6 +451,7 @@ figcaption {
     transition: background-color 0.3s;
 }
 
-.btn-custom:hover-sr {
+.btn-custom-sr:hover {
     background-color: #0056b3;
 }
+
