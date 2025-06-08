@@ -23,6 +23,7 @@ body {
 /* Alinhamento do logotipo e texto */
 .navbar-brand {  
     display: flex; /* Organiza elementos em linha */
+    font-size: 25px;
     align-items: center; /* Alinha elementos verticalmente */
     color: #5f8fb6; /* Define a cor do texto */
     color: inherit !important; /* Mantém a cor original do texto da logo ao passar o mouse */   
@@ -54,6 +55,19 @@ body {
     border-radius: 100%; /* Se quiser deixar a logo arredondada */
 }
 
+.span {
+    font-size: 1.625rem;
+    font-weight: bold;
+    margin-left: 2.5rem; 
+    color: #5f8fb6;
+    white-space: normal;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
 /* Classe personalizada para os botões */
 .btn-custom {
     font-size: 16px; /* Tamanho do texto */
@@ -64,7 +78,6 @@ body {
     width: 100px; /* Largura fixa reduzida para os botões */
     border: none;    
     border-radius: 5px; /* Bordas arredondadas */
-    margin: 1em 5px; /* Espaçamento vertical de um parágrafo (1em) e horizontal de 5px */
     text-decoration: none; /* Remover sublinhado */
     transition: 0.3s ease; /* Suavizar efeitos */
     margin: 10px 5px; /* Adiciona espaço ao redor dos botões */   
@@ -108,10 +121,17 @@ body {
     color: #fff;
 }
 #nome, #email {
-    width: 400px;
+    width: 250px;
+    color: #5f8fb6;
+    
 }
 #telefone {
-    width: 180px;    
+    width: 140px;  
+    color: #5f8fb6;
+    
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #5f8fb6;
 }
 
 /* Garante que o menu se alinhe à esquerda quando expandido */
@@ -122,6 +142,17 @@ body {
 
     .navbar-nav {
         align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .navbar-brand span {
+        font-size: 1.5vw !important; /* Override to prevent text size reduction */
+    }
+
+    .logo-img {
+        max-width: 100%;
+        height: auto;
+        width: clamp(40px, 10vw, 80px); /* Ajusta o tamanho entre 40px e 80px conforme a tela */
+        border-radius: 100%; /* Se quiser deixar a logo arredondada */
     }
 
     .contato {
@@ -159,7 +190,13 @@ body {
         background: #efb5ae; /* Mantém o fundo em telas menores */
         border-radius: 10px; /* Mantém as bordas arredondadas */
     }
-}
+    
+    .tm-img-sr {
+        width: 250px;
+        height: auto;
+        }
+    }
+
 
 
 @media (max-width: 480px) {
@@ -202,13 +239,15 @@ body {
 .endereco{
     text-align: center; /* Centraliza o conteúdo do corpo da página */
     color: #5f8fb6; /* Define a cor do texto */
-    font-size: 20px; /* Define o tamanho da fonte como 24 pixels */
+    font-size: 15px; /* Define o tamanho da fonte como pixels */
     font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte do texto */
     background: #eda9a1; /* Define um fundo com cor*/    
-    width: 600px; /* Define a largura da div */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 300px; /* Define a largura da div */
+    margin: 20px auto; /* Centraliza horizontalmente */
     font-weight: bold; /* Deixa o texto em negrito */
     border-radius: 15px; /* Arredonda os cantos */
+    padding: 5px;
+    height: auto;
 }
 
 .contato {
@@ -235,12 +274,18 @@ body {
     border: 1px solid #5f8fb6; /* Borda sutil para o fieldset */
     border-radius: 10px; /* Arredonda os cantos do fieldset */
     margin: 0 auto; /* Centraliza o fieldset */
-    max-width: 90%; /* Limita a largura para responsividade */
-    height: 520px; /* Altura fixa de 500 pixels */
+    max-width: 800px; /* Limita a largura para responsividade */
+    width: 100%;
+    height:auto; /* Altura fixa de 500 pixels */
+    background-color: #fff; /* Fundo branco para destaque */
+    box-shadow: 0 0 10px #5f8fb6(0, 0, 0, 0.5); /* Sombra suave para o fieldset */   /* Sombra suave */
+    box-sizing: border-box;
+    display: inline-block;                     
 }
 
+
 .cx_txt {
-    resize: none; /* Impede redimensionamento */
+    resize: none; /* Impede redimensionamento */    
     width: 100%; /* Largura total */
     max-width: 600px; /* Limite máximo */
     height: 150px; /* Altura fixa */
@@ -253,7 +298,8 @@ body {
 }
 
 .grupo_maior {
-    font-size: 16px;
+    font-size: 20px;
+    color: #5f8fb6;
     width: 100%; /* Largura total */
     max-width: 600px; /* Limite máximo */
     padding: 6px; /* Espaço interno */
