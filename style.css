@@ -7,6 +7,10 @@ body {
     background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
     background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
     opacity: 1; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 
 }
 
@@ -151,7 +155,7 @@ body {
     }
     .content h2 {
         font-size: 0.5rem; /* Ajusta o tamanho da fonte em telas menores */
-        padding: 8px 15px; /* Ajusta o espaçamento interno em telas menores */
+        padding: 5px 10px; /* Ajusta o espaçamento interno em telas menores */
         background: #efb5ae; /* Mantém o fundo em telas menores */
         border-radius: 10px; /* Mantém as bordas arredondadas */
     }
@@ -165,9 +169,9 @@ body {
 }
 
 .carousel-container {
-    width: 80%; /* Define uma largura personalizada */
+    width: 100%; /* Define uma largura personalizada */
     max-width: 600px; /* Impede que o carousel fique muito grande */
-    height: 550px; /* Define a altura */
+    height: auto; /* Define a altura */
     margin: 20px auto; /* Adiciona margem superior para elevar o carousel */
     position: relative; /* Mantém controle sobre sua posição */
     top: 0%; /* Move o carousel para cima */
@@ -190,7 +194,7 @@ body {
 
 /* Ajusta as imagens dentro do carousel */
 .carousel-inner img {
-    width: auto;
+    width: 100%;
     height: auto;
     object-fit: contain;text-align: cen
 }
@@ -387,12 +391,12 @@ body {
     font-size: 1.5rem; /* Tamanho padrão */
     color: #5f8fb6;
     font-weight: bold;
-    margin-bottom: 50px; /* Aumenta o espaçamento abaixo do título */
+    margin-bottom: 30px; /* Aumenta o espaçamento abaixo do título */
     background: #efb5ae; /* Fundo na cor #efb5ae */
-    padding: 10px 20px; /* Espaçamento interno para o fundo */
+    padding: 8px 12px; /* Espaçamento interno para o fundo */
     border-radius: 10px; /* Bordas arredondadas */
     display: inline-block; /* Ajusta o fundo ao tamanho do texto */
-    width: 24%; /* Garante que o título ocupe toda a largura */
+    width: 60%; /* Garante que o título ocupe toda a largura */
     text-align: center; /* Mantém o texto centralizado */
     word-wrap: break-word; /* Quebra linha se necessário */
     transition: all 0.3s ease-in-out;
