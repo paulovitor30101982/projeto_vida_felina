@@ -241,7 +241,7 @@ form {
     color: #5f8fb6; /* Define a cor do texto */
     font-size: 15px; /* Define o tamanho da fonte como pixels */
     font-family: Georgia, 'Times New Roman', Times, serif; /* Define a fonte do texto */
-    background: #eda9a1; /* Define um fundo com cor*/    
+    background: #efb5ae; /* Define um fundo com cor*/    
     width: 300px; /* Define a largura da div */
     margin: 20px auto; /* Centraliza horizontalmente */
     font-weight: bold; /* Deixa o texto em negrito */
@@ -280,7 +280,7 @@ form {
     margin: 0 auto; /* Centraliza o fieldset */
     max-width: 800px; /* Limita a largura para responsividade */
     width: 100%;
-    height:auto; /* Altura fixa de 500 pixels */
+    height:auto; /* Altura */
     background-color: #fff; /* Fundo branco para destaque */
     box-shadow: 0 0 10px #5f8fb6(0, 0, 0, 0.5); /* Sombra suave para o fieldset */   /* Sombra suave */
     box-sizing: border-box;
