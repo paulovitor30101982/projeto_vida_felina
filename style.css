@@ -268,6 +268,10 @@ form {
     margin-bottom: 20px; /* Espaço abaixo do título */
 }
 
+.contato h3 {
+    font-size: 24px; /* Tamanho específico para o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
 .grupo {
     color: #5f8fb6;
     padding: 5%;
@@ -447,6 +451,23 @@ form {
     word-wrap: break-word; /* Quebra linha se necessário */
     transition: all 0.3s ease-in-out;
 }
+
+.content h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.0rem; /* Tamanho padrão */
+    color: #5f8fb6;
+    font-weight: bold;
+    margin-bottom: 30px; /* Aumenta o espaçamento abaixo do título */
+    background: #efb5ae; /* Fundo na cor #efb5ae */
+    padding: 8px 12px; /* Espaçamento interno para o fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    display: inline-block; /* Ajusta o fundo ao tamanho do texto */
+    width: 80%; /* Garante que o título ocupe toda a largura */
+    text-align: center; /* Mantém o texto centralizado */
+    word-wrap: break-word; /* Quebra linha se necessário */
+    transition: all 0.3s ease-in-out;
+}
+
 .servicos{
     display: inline-block;
     margin: 50px; /* Aumenta o afastamento entre as figuras */
